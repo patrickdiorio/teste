@@ -1,0 +1,14 @@
+{
+	"name": "ls_databricks",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureDatabricks",
+		"typeProperties": {
+			"domain": "https://adb-2038822253308707.7.azuredatabricks.net",
+			"authentication": "MSI",
+			"workspaceResourceId": "/subscriptions/d23e7f59-09d7-417d-a6a8-78eb59751d65/resourceGroups/rg_drogasil_dev/providers/Microsoft.Databricks/workspaces/dbw-drogasil-dev",
+			"existingClusterId": "0716-184916-dm7e17n1"
+		}
+	}
+}

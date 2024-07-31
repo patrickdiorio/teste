@@ -1,0 +1,9 @@
+{
+	"name": "adf-drogasil-dev",
+	"location": "westus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "0ef1e6a3-e8fe-447d-b48d-df799746ff14",
+		"tenantId": "d16f0536-3c2f-4035-887f-8949bacfacfd"
+	}
+}

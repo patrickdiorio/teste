@@ -1,0 +1,49 @@
+{
+	"name": "ds_pedidos",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "pedidos_drogasil.csv",
+				"fileSystem": "db-drogasil"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "PedidoID",
+				"type": "String"
+			},
+			{
+				"name": "ClienteID",
+				"type": "String"
+			},
+			{
+				"name": "Produto",
+				"type": "String"
+			},
+			{
+				"name": "Quantidade",
+				"type": "String"
+			},
+			{
+				"name": "Preco_Unitario",
+				"type": "String"
+			},
+			{
+				"name": "Data",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

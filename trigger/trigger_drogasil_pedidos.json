@@ -1,0 +1,24 @@
+{
+	"name": "trigger_drogasil_pedidos",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "pipeline_drogasil",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/db-drogasil/blobs/pedidos",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/d23e7f59-09d7-417d-a6a8-78eb59751d65/resourceGroups/rg_drogasil_dev/providers/Microsoft.Storage/storageAccounts/adlsdrogasildev",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}
